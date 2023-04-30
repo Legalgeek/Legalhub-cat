@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Welcome to RSSHub!</title>
+    <title>Welcome to LegalHub!</title>
     {{ if disallowRobot }}
         <meta name="robots" content="noindex">
     {{ /if }}
@@ -79,20 +79,24 @@
 <body>
     <div class="content">
         <p>
-            <img src="https://i.loli.net/2019/04/23/5cbeb7e41414c.png" alt="RSSHub" width="100">
+            <img src="https://blog.legalhub.cn/images/avatar.jpg" alt="LegalHub" width="100">
         </p>
 
         <h1>Welcome to
-            <span style="color: #F5712C;">RSSHub</span>!</h1>
+            <span style="color: #F5712C;">LegalHub</span>!</h1>
 
-        <p>If you see this page, the RSSHub{{ if hash }} ({{ hash }}){{ /if }} is successfully installed and working.</p>
+        <p> Congratulations，if you see this page, the LegalHub{{ if hash }} ({{ hash }}){{ /if }} is successfully installed and working.</p>
 
         <p>For online documentation and support please refer to
-            <a href="https://docs.rsshub.app/" target="_blank">docs.rsshub.app</a>.</p>
+            <a href="https://blog.legalhub.cn/" target="_blank">blog.legalhub.cn</a>.</p>
 
-        <p>-- Made with
+        <p>This is a special version made
             <i style="color:#d43f57">♥</i> by
-            <a href="https://diygod.me" target="_blank">DIYgod</a>
+            <a href="https://blog.legalhub.cn/about/index.html" target="_blank">LEGALGEEK</a>
+        </p>
+        <p> 👏 Thanks to the  
+            
+            <a href="https://docs.rsshub.app/" target="_blank"> RSSHub</a> project created by <a href="https://diygod.me/" target="_blank">DIYgod</a>
         </p>
 
         {{ if showDebug }}
