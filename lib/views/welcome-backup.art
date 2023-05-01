@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Welcome to Cat !</title>
+    <title>Welcome to LegalHub!</title>
     {{ if disallowRobot }}
         <meta name="robots" content="noindex">
     {{ /if }}
@@ -79,24 +79,32 @@
 <body>
     <div class="content">
         <p>
-            <img src="https://docs.legalhub.cn/images/logo-300-t.svg" alt="LegalHub" width="100">
+            <img src="https://blog.legalhub.cn/images/avatar.jpg" alt="LegalHub" width="100">
         </p>
 
         <h1>Welcome to
             <span style="color: #F5712C;">Cat</span> !</h1>
 
-        <p> 祝贺！当你看到这个页面的时候，说明 LegalHub · Cat 项目已经成功部署和运行
+        <p> 祝贺！当你看到这个页面的时候，说明 LegalHub · Cat 项目已经成功部署和运行。</p>
+        <p>你可以在这里查看使用说明书 👉
+            <a href="https://docs.legalhub.cn/cat" target="_blank">docs.legalhub.cn/cat</a>.</p>
+        <p> 👏 本项目基于<a href="https://diygod.me/" target="_blank">DIYgod</a>开发的<a href="https://docs.rsshub.app/" target="_blank"> RSSHub</a>
         </p>
-        <p>这是一款专注于法律垂直领域的 RSS 生成工具，让你以优雅的方式感知中文法律世界资讯动态
+        <p>由<i style="color:#d43f57">♥</i> <a href="https://blog.legalhub.cn/about/index.html" target="_blank">LEGALGEEK</a>进行二次开发维护
         </p>
-        <p>项目由<i style="color:#d43f57">♥</i> <a href="https://blog.legalhub.cn/about/index.html" target="_blank">LEGALGEEK</a>开发和维护
-        </p>
-        <p>已支持网站及使用说明见 👉
-            <a href="https://docs.legalhub.cn/cat" target="_blank">docs.legalhub.cn/cat</a></p>
-        <p> 👏 本项目受益于<a href="https://diygod.me/" target="_blank">DIYgod</a>开发的<a href="https://docs.rsshub.app/" target="_blank"> RSSHub</a>，在这里表达感谢！
-        </p>
-        
         <br/>
+            
+        <p> Congratulations，if you see this page, the LegalHub{{ if hash }} ({{ hash }}){{ /if }} is successfully installed and working.</p>
+        <p>For online documentation and support please refer to
+            <a href="https://docs.legalhub.cn/cat" target="_blank">docs.legalhub.cn/cat</a>.</p>
+        <p>This is a special version made
+            <i style="color:#d43f57">♥</i> by
+            <a href="https://blog.legalhub.cn/about/index.html" target="_blank">LEGALGEEK</a>
+        </p>
+        <p> 👏 Thanks to the  
+            
+            <a href="https://docs.rsshub.app/" target="_blank"> RSSHub</a> project created by <a href="https://diygod.me/" target="_blank">DIYgod</a>
+        </p>
 
         {{ if showDebug }}
         <details>
