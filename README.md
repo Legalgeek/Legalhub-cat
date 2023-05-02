@@ -10,9 +10,11 @@ docker push legalgeek/cat:0.x
 - 运行 镜像
 docker run -d --name legalhub_cat_0 -p 1400:1200 legalgeek/cat:1.0
 
-- 设置更长的缓存时间
-docker run  -d --name legalhub_cat_1 -p 1400:1200  -e CACHE_CONTENT_EXPIRE="2*60*60"  -e CACHE_EXPIRE="15*60" legalgeek/cat:1.0
-
+- 使用docker-compose
+vi docker-compose.yml
+docker volume create redis-data
+docker-compose up -d
+docker-compose down
 ```
 
 ## 附：原始项目版权信息 MIT
