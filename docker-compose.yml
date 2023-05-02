@@ -1,19 +1,21 @@
-version: '3'
+version: '4'
 
 services:
     rsshub:
         # two ways to enable puppeteer:
         # * comment out marked lines, then use this image instead: diygod/rsshub:chromium-bundled
         # * (consumes more disk space and memory) leave everything unchanged
-        image: diygod/rsshub
+        image: legalgeek/cat:1.0
         restart: always
         ports:
-            - '1200:1200'
+            - '1800:1200'
         environment:
             NODE_ENV: production
             CACHE_TYPE: redis
             REDIS_URL: 'redis://redis:6379/'
             PUPPETEER_WS_ENDPOINT: 'ws://browserless:3000'  # marked
+            CACHE_EXPIRE: 360
+            CACHE_CONTENT_EXPIRE: 21600
         depends_on:
             - redis
             - browserless  # marked
