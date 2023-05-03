@@ -9,7 +9,7 @@
 >
     <channel>
         <title><![CDATA[{{@ title || 'LegalHub' }}]]></title>
-        <link>{{ link || 'https://docs.legalhub.cn/' }}</link>
+        <link>{{ link || 'https://docs.legalhub.cn/cat' }}</link>
         <atom:link href="{{ atomlink }}" rel="self" type="application/rss+xml" />
         <description><![CDATA[{{@ description || title }} - Made with love by LegalGeek]]></description>
         <generator>LegalHub</generator>
